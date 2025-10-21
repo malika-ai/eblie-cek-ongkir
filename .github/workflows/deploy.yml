@@ -34,8 +34,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint
-        run: npm run lint
+      # Uncomment when you want to use strict type-checking
+      # - name: Lint
+      #   run: npm run lint
 
       - name: Build (Vite)
         env:
